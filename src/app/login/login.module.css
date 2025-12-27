@@ -1,0 +1,127 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    background: var(--color-bg);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.logoIcon {
+    font-size: var(--text-2xl);
+    color: var(--color-accent);
+}
+
+.card {
+    width: 100%;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.header h1 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-sm);
+}
+
+.header p {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--color-danger);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.field label {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.inputIcon {
+    position: absolute;
+    left: var(--space-md);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-tertiary);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.inputWrapper input {
+    padding-left: calc(var(--space-md) + 28px) !important;
+}
+
+.submitBtn {
+    width: 100%;
+    margin-top: var(--space-sm);
+}
+
+.footer {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.link {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.link:hover {
+    opacity: 0.8;
+}

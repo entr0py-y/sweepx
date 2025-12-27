@@ -1,0 +1,141 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-bg-secondary);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 100;
+}
+
+.header h1 {
+    font-size: var(--text-lg);
+}
+
+.backBtn,
+.filterBtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.backBtn:hover,
+.filterBtn:hover {
+    color: var(--color-text);
+    background: var(--color-bg-tertiary);
+    opacity: 1;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-bg-secondary);
+    border-bottom: 1px solid var(--color-border);
+    overflow-x: auto;
+}
+
+.filterChip {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+.filterChip:hover {
+    border-color: var(--color-text-tertiary);
+}
+
+.filterChip.active {
+    background: var(--color-text);
+    color: var(--color-bg);
+    border-color: var(--color-text);
+}
+
+/* Stats Bar */
+.statsBar {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--color-bg-secondary);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.statDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/* Map Container */
+.mapContainer {
+    flex: 1;
+    position: relative;
+}
+
+.mapLoading {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-tertiary);
+}
+
+/* Legend */
+.legend {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+}
+
+.legendTitle {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.legendItems {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.legendItems span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+}
+
+.legendDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
